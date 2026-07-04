@@ -10,7 +10,7 @@ async function loadEmployees(page) {
     showOnly(loadingEl);
 
     try {
-        const response = await fetch(`/api/v1/employees?page=${page}&pageSize=10`, {
+        const response = await fetch(`/api/v1/employees?page=${page}&pageSize=5`, {
             credentials: 'same-origin'
         });
 
