@@ -1,3 +1,5 @@
+using System.Text.Json.Serialization;
+
 namespace EmployeesManagement.Models.Entities;
 
 public enum UserRole
@@ -6,6 +8,7 @@ public enum UserRole
     Standard
 }
 
+[JsonConverter(typeof(JsonStringEnumConverter))]
 public enum EmployeeType
 {
     Manager,
